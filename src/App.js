@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 import img1 from "./image/Rectangle 17995.png"
 import img2 from "./image/Rectangle 17996.png"
@@ -7,7 +7,7 @@ import img4 from "./image/Rectangle 17998.png"
 import { AiOutlineArrowRight } from 'react-icons/ai';
 import { AiOutlineArrowLeft } from 'react-icons/ai';
 import playIcon from "./image/Group.png"
-
+import youtube from "./image/youtubeicon.png"
 function App() {
   return (
     <div>
@@ -47,13 +47,32 @@ function App() {
         <h3>Appreciation From Clients</h3>
         <div className="box1">
           <AiOutlineArrowLeft className="leftArr" />
-          <img src={img1} className="img_L" />
-          <img src={img2} className="img_L" />
-          <img src={img3} className="img_L" />
-          <img src={img4} className="img_L" />
+          <div className="img_container">
+            <img src={playIcon} className="play_icon" />
+
+            <h5 className="you_tube">Watch on<img src={youtube} className="youtube_icon" /> Youtube</h5>
+
+            <img src={img1} className="img_L" alt="img" />
+          </div>
+          <div className="img_container">
+            <img src={playIcon} className="play_icon" />
+            <h5 className="you_tube">Watch on<img src={youtube} className="youtube_icon" /> Youtube</h5>
+            <img src={img2} className="img_L" alt="img" />
+          </div>
+          <div className="img_container">
+            <img src={playIcon} className="play_icon" />
+            <h5 className="you_tube">Watch on<img src={youtube} className="youtube_icon" /> Youtube</h5>
+            <img src={img3} className="img_L" alt="img" />
+          </div>
+          <div className="img_container">
+            <img src={playIcon} className="play_icon" />
+            <h5 className="you_tube">Watch on<img src={youtube} className="youtube_icon" /> Youtube</h5>
+            <img src={img4} className="img_L" alt="img" />
+          </div>
           <AiOutlineArrowRight className="rightArr" />
         </div>
       </div>
+
     </div >
   );
 }
