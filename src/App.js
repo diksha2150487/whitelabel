@@ -1,5 +1,12 @@
 import logo from "./logo.svg";
 import "./App.css";
+import img1 from "./image/Rectangle 17995.png"
+import img2 from "./image/Rectangle 17996.png"
+import img3 from "./image/Rectangle 17997.png"
+import img4 from "./image/Rectangle 17998.png"
+import { AiOutlineArrowRight } from 'react-icons/ai';
+import { AiOutlineArrowLeft } from 'react-icons/ai';
+import playIcon from "./image/Group.png"
 
 function App() {
   return (
@@ -39,11 +46,15 @@ function App() {
       <div className="container2">
         <h3>Appreciation From Clients</h3>
         <div className="box1">
-          <div className="img">
-          </div>
+          <AiOutlineArrowLeft className="leftArr" />
+          <img src={img1} className="img_L" />
+          <img src={img2} className="img_L" />
+          <img src={img3} className="img_L" />
+          <img src={img4} className="img_L" />
+          <AiOutlineArrowRight className="rightArr" />
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 
